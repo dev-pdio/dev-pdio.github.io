@@ -1,0 +1,123 @@
+// Mediaqueries
+@media (max-width: 990px)
+  // Bartop
+  .bartop
+    .menu
+      display: none
+    .actions
+      .button
+        display: none
+
+  // Spotlight
+  .spotlight
+    background-image: url(../assets/image/spotlight.png)
+    background-size: 220px 180px
+    background-position: 85% 300px
+    background-repeat: no-repeat
+    & > .center
+      height: unset
+      background-image: none
+      padding-top: 30px
+    h1
+      font-size: 27px
+      line-height: 1.3em
+      padding-top: 0
+    h2
+      font-size: 14px
+      max-width: 80%
+
+  // Problems
+  .problems-container
+    h2
+      font-size: 27px
+      line-height: 1.3em
+      margin: 60px 0 30px
+    .problems
+      flex-flow: column
+      img
+        max-width: 80%
+      ul
+        max-width: 94%
+        padding-left: 40px
+        margin-top: 40px
+        li
+          &:last-child
+            width: calc(100% + 22px)
+            margin-left: -22px
+            .button
+              width: 100%
+
+  // Benefits
+  .benefits
+    background-size: 900px 180px
+    background-position: calc(50vw - 433px) calc(100% - 345px)
+    h2, h3
+      line-height: 1.3em
+      padding: 0 6%
+    h2
+      font-size: 27px
+    h3
+      font-size: 22px
+    .past
+      max-width: 990px
+      margin: 230px auto 0
+      h2
+        font-size: 27px
+        line-height: 1.3em
+      p
+        padding: 0 20px
+      .button
+        margin-top: 0
+
+  // Features
+  .features-container
+    margin-bottom: 40px
+    .features
+      grid-template-columns: 1fr
+      column-gap: 10px
+      .management, .services, .security, .reports, .functionalities
+        grid-column: 1
+        max-width: unset
+        padding-left: 40px
+        margin-bottom: 40px
+
+  // App
+  .app-container
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    .app
+      h2
+        text-align: center
+      .download
+        display: flex
+        flex-flow: column
+        align-items: center
+    .app-image
+      max-width: 80%
+      margin: 40px 0 0
+
+  // Contact
+  .contact
+    h3
+      padding: 0 20px
+
+  // Footer
+  footer
+    .center
+      flex-flow: column
+      align-items: center
+      .address
+        flex-flow: column
+        align-items: center
+      .logo-footer
+        margin: 0 0 20px
+      ul
+        flex-flow: column
+        align-items: center
+      li
+        margin: 0 0 20px
+        text-align: center
+      span
+        display: inline-block
+        margin-top: 30px

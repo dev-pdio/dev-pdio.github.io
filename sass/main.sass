@@ -1,0 +1,376 @@
+@import reset
+@import styleguide
+
+// Bartop
+.bartop
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  align-items: center
+  height: 95px
+  .navbar
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+  .menu
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    margin-left: 60px
+    li
+      margin-right: 55px
+      &:last-child
+        margin: 0
+      a
+        display: block
+        font-family: Gotham Medium, sans-serif
+        font-size: 16px
+        font-weight: normal
+        color: #666
+        letter-spacing: -0.26px
+        line-height: 16px
+  .actions
+    .sign-in
+      color: #666
+      margin-left: 40px
+
+// Spotlight
+.spotlight
+  min-height: 500px
+  background-color: #F9F9F9
+  & > .center
+    padding-top: 55px
+    height: 500px
+    background-image: url(../assets/image/spotlight.png)
+    background-size: 490px 400px
+    background-position: 85% 55px
+    background-repeat: no-repeat
+  & h1, & h2
+    max-width: 420px
+  & h1
+    font-size: 36px
+    color: #0954dd
+    letter-spacing: -0.59px
+    line-height: 42px
+    padding-top: 30px
+  & h2
+    font-family: Gotham Medium, sans-serif
+    font-size: 18px
+    font-weight: normal
+    color: #444
+    letter-spacing: -0.29px
+    line-height: 23px
+    margin: 20px 0 30px
+
+// Problems
+.problems-container
+  display: flex
+  flex-flow: column
+  align-items: center
+  h2
+    max-width: 465px
+    font-family: Gotham Bold, sans-serif
+    font-size: 36px
+    color: #0954dd
+    letter-spacing: -0.59px
+    text-align: center
+    line-height: 42px
+    margin: 60px 0
+
+  .problems
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-around
+    align-items: center
+    width: 100%
+    img
+      max-width: 400px
+    ul
+      max-width: 415px
+      li
+        p
+          font-family: Gotham Medium, sans-serif
+          font-size: 16px
+          font-weight: normal
+          color: #444
+          letter-spacing: -0.26px
+          line-height: 22px
+          margin-bottom: 35px
+        &:last-child
+          margin-bottom: 0
+          &::before
+            display: none
+        &::before
+          content: ''
+          position: absolute
+          display: inline-block
+          width: 8px
+          height: 8px
+          margin: 7px 0 0 -22px
+          border-radius: 50%
+          background-color: #444
+
+// Benefits
+.benefits
+  border-top: 1px solid #DAE5EE
+  padding-top: 90px
+  margin-top: 90px
+  background-image: url(../assets/image/illustration.svg)
+  background-size: 1920px 382px
+  background-position: center calc(100% - 330px)
+  background-repeat: no-repeat
+  h2
+    font-family: 'Gotham Black', sans-serif
+    font-size: 36px
+    color: #000
+    font-weight: normal
+    letter-spacing: -0.59px
+    text-align: center
+    line-height: 42px
+    margin-bottom: 60px
+  h3
+    font-family: 'Gotham Black', sans-serif
+    font-size: 32px
+    color: #0954dd
+    font-weight: normal
+    letter-spacing: -0.52px
+    text-align: center
+    line-height: 42px
+    margin-bottom: 60px
+  .past
+    display: flex
+    flex-flow: column
+    justify-content: center
+    align-items: center
+    background-color: #DAE5EE
+    max-width: 1915px
+    min-height: 350px
+    margin: 410px auto 0
+    h2
+      font-family: Gotham Bold, sans-serif
+      font-size: 36px
+      color: #0954dd
+      letter-spacing: -0.59px
+      text-align: center
+      line-height: 42px
+      margin-bottom: 25px
+    p
+      font-family: Gotham Medium, sans-serif
+      font-size: 16px
+      font-weight: normal
+      color: #444
+      letter-spacing: -0.26px
+      text-align: center
+      line-height: 22px
+    .button
+      margin-top: 20px
+
+// Features
+.features-container
+  margin-bottom: 120px
+  h2
+    font-family: Gotham Bold, sans-serif
+    font-size: 36px
+    color: #0954dd
+    letter-spacing: -0.59px
+    text-align: center
+    line-height: 42px
+    margin: 60px 0
+  .features
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: min-content min-content
+    column-gap: 20%
+    .management, .services
+      grid-column: 1
+    .security, .reports
+      grid-column: 2
+    .functionalities
+      grid-column: 3
+      grid-row: 1 / span 2
+    .management, .security
+      margin-bottom: 40px
+    ul
+      max-width: 210px
+      li
+        display: block
+        margin-bottom: 15px
+        p
+          font-family: Gotham Medium, sans-serif
+          font-size: 14px
+          color: #444
+          font-weight: normal
+          letter-spacing: -0.23px
+          line-height: 22px
+        &::before
+          content: ''
+          position: absolute
+          display: inline-block
+          width: 17px
+          height: 12px
+          margin: 4px 0 0 -27px
+          background-image: url(../assets/image/check.svg)
+          background-size: 17px 12px
+          background-repeat: no-repeat
+        &:first-child
+          font-family: Gotham Bold, sans-serif
+          font-size: 16px
+          color: #000
+          letter-spacing: -0.26px
+          line-height: 22px
+          margin: 0 0 12px -25px
+          &::before
+            display: none
+      .beta
+        display: inline-block
+        font-family: Gotham Medium, sans-serif
+        font-size: 9px
+        color: #DF1B1B
+        font-weight: normal
+        letter-spacing: 0.25px
+        line-height: 13px
+        padding: 3px 10px 0
+        border-radius: 7px
+        background-color: #F9E3E3
+          
+
+// App
+.app-container
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  .app
+    h2
+      max-width: 310px
+      font-family: Gotham Bold, sans-serif
+      font-size: 27px
+      color: #0954dd
+      letter-spacing: -0.44px
+      line-height: 33px
+      margin: 40px 0
+    .download
+      h4
+        font-family: Gotham Bold, sans-serif
+        font-size: 20px
+        color: #0954dd
+        letter-spacing: -0.33px
+        line-height: 20px
+        margin-bottom: 15px
+      .stores
+        display: flex
+        flex-flow: row wrap
+        position: relative
+        z-index: 99
+        a
+          &:first-child
+            margin-right: 20px
+  .app-image
+    max-width: 600px
+    margin-left: -185px
+
+// Contact
+.contact
+  display: flex
+  flex-flow: column
+  align-items: center
+  margin: 120px 0
+  background-image: url(../assets/image/chat.svg), url(../assets/image/check-big-outline.svg)
+  background-size: 240px 190px, 150px 111px
+  background-position: calc(50vw - 430px) 40%, calc(50vw + 235px) 87%
+  background-repeat: no-repeat
+  h2
+    font-family: Gotham Bold, sans-serif
+    font-size: 36px
+    color: #0954dd
+    letter-spacing: -0.59px
+    text-align: center
+    line-height: 42px
+    margin-bottom: 25px
+  h3
+    max-width: 390px
+    font-family: Gotham Medium, sans-serif
+    font-size: 16px
+    font-weight: normal
+    color: #444
+    letter-spacing: -0.26px
+    text-align: center
+    line-height: 22px
+  .form
+    max-width: 330px
+    background: #fff
+    border: 2px solid #CFD9E6
+    padding: 15px 25px 25px
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.07)
+    border-radius: 8px
+    margin-top: 30px
+    h4
+      font-family: Gotham Bold, sans-serif
+      font-size: 20px
+      color: #000
+      letter-spacing: -0.56px
+      margin-bottom: 15px
+    input
+      width: 100%
+      margin-bottom: 15px
+    button
+      width: 100%
+  & .talk-whatsapp
+    display: flex
+    flex-flow: column
+    min-width: 280px
+    p
+      font-size: 12px
+      color: #5C6067
+      margin: 25px 0
+      &::before
+        content: ''
+        display: inline-block
+        width: 40%
+        height: 1px
+        margin: 0 19px 3px 0
+        background-color: #cfd9e6
+      &::after
+        content: ''
+        display: inline-block
+        width: 40%
+        height: 1px
+        margin: 0 0 3px 19px
+        background-color: #cfd9e6
+
+// Footer
+footer
+  width: 100%
+  border-top: 2px solid #DAE5EE
+  .center
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    padding: 30px 0
+    .address
+      display: flex
+      flex-flow: row wrap
+    .logo-footer
+      display: inline-block
+      width: 75px
+      margin-right: 50px
+    ul
+      display: flex
+      flex-flow: row wrap
+    li, a, span
+      font-family: Gotham Medium, sans-serif
+      font-size: 13px
+      color: #8991AB
+      font-weight: normal
+      letter-spacing: -0.21px
+      line-height: 22px
+    li
+      margin-right: 115px
+      &:last-child
+        margin: 0
+    a
+      display: block
+      &:hover
+        text-decoration: underline
+
+
+@import mediaqueries
