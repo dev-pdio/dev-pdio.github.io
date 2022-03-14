@@ -234,15 +234,20 @@
     -->
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
   <fieldset id="fs-frm-inputs">
+    <p>
     <label for="full-name">Nome Completo:</label>
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    </p>  
+    <p>
     <label for="email-address">E-mail:</label>
     <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    </p>
+    <p>
     <label for="message">Como podemos ajudar?</label>
     <textarea rows="5" name="message" id="message" placeholder="Informe opcionalmente, telefone, melhor horário para contato, outras informações." required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
   </fieldset>
-  <input type="submit" value="Submit">
+    <p><input type="submit" value="Submit"></p>
 </form>
    
   </div>
