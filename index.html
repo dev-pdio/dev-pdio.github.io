@@ -2,22 +2,31 @@
 <html>
 <head>
 
-<!-- Script Consultoria -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MFHSWM6');</script>
+<!-- Google tag (gtag.js) --> 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10891662101"></script> 
+	<script> window.dataLayer = window.dataLayer || []; 
+		function gtag(){dataLayer.push(arguments);} 
+		gtag('js', new Date()); 
+		gtag('config', 'AW-10891662101'); 
+	</script>	
+	
+<!-- Event snippet for Contato [WhatsApp site] conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
+	<script> 
+		function gtag_report_conversion(url) { 
+			var callback = function () { 
+				if (typeof(url) != 'undefined') { 
+					window.location = url; 
+				} 
+			}; 
+			gtag('event', 'conversion', { 'send_to': 'AW-10891662101/fZ6rCKST9osYEJWmxsko', 'event_callback': callback }); 
+			return false; 
+		} 
+	</script>	
 
-	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Ping. - Se tem papel na sua mesa, tem algo errado</title>
-  <link rel="stylesheet" href="css/main.css">
+	
 </head>
 <body>
-<!-- Script Consultoria -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFHSWM6"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 
   <!-- Bartop -->
 	<div class="bartop center">
@@ -44,7 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </ul>
     </div>
     <div class="actions">
-      <a href="#contato" class="button regular blue">Fale com um analista</a>
+      <a href="#contato" class="button regular blue">Fale conosco no Whatsapp!</a>
       <a href="https://app.meuping.io" class="sign-in" target="_blank">Entrar</a>
     </div>
   </div>
@@ -54,7 +63,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="center">
       <h1>Se tem papel na sua mesa, tem algo errado.</h1>
       <h2>Transformamos o seu modo de trabalhar: simplificamos os processos e reduzimos os custos sem que você gaste muito com isso.</h2>
-      <a href="#contato" class="button regular blue">Fale com um analista</a>
+      <a href="#contato" class="button regular blue">Fale conosco no Whatsapp!</a>
     </div>
   </div>
 
@@ -77,7 +86,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Gasto muito tempo com deslocamento só para assinar documentos ou despacha-los.</p>
         </li>
         <li>
-          <a href="#contato" class="button regular blue">Fale com um analista</a>
+          <a href="#contato" class="button regular blue">Fale conosco no Whatsapp!</a>
         </li>
       </ul>
     </div>
@@ -96,7 +105,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2>Você quer continuar no passado?</h2>
       <p>O papel é uma tecnologia que vem sendo utilizada nas organizações há mais de 200 anos!</p>
       <p>É rápido, barato e fácil acabar com o papel da sua mesa de trabalho.</p>
-      <a href="#contato" class="button regular blue">Fale com um analista</a>
+      <a href="#contato" class="button regular blue">Fale conosco no Whatsapp!</a>
     </div>
   </div>
 
@@ -225,9 +234,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Contact -->
   <div id="contato" class="contact">
     <h2>Vamos conversar</h2>
-    <h3>Ajudaremos você a determinar se o Ping é uma solução viável pra você em 15 minutos ou menos.</h3>
+    <h3>Ajudaremos você a determinar se o Ping é uma solução viável pra você em menos de 15 minutos.</h3>
     <div class="talk-whatsapp">
-        <a href="https://api.whatsapp.com/send?l=pt&phone=+5569999890101&text=Olá, tenho interesse em conhecer mais sobre o Ping." class="button regular green" target="_blank">Fale com a gente no WhatsApp</a>
+        <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?l=pt&phone=+5569999890101&text=Olá, tenho interesse em conhecer mais sobre o Ping.');" href="https://api.whatsapp.com/send?l=pt&phone=+5569999890101&text=Olá, tenho interesse em conhecer mais sobre o Ping." class="button regular green" target="_blank">Fale com a gente no WhatsApp!</a>
     </div>
 	  <!-- Remove form temporarily
     <div class="form center">
