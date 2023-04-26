@@ -18,11 +18,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-medium-holder {
-  max-width: 500px;
-  margin: auto;
-}
-
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -622,6 +617,11 @@ ul li {
 
 .features-container {
   margin-bottom: 120px;
+}
+
+.medium-holder {
+  max-width: 500px;
+  margin: auto;
 }
 
 .features-container h2 {
