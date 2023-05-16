@@ -91,7 +91,7 @@
   top: 1px;
 }
 .slider > a:focus {
-  background: #000;
+  background: #eeeeee;
 }
 
 /* Don't need button navigation */
