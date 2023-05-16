@@ -79,7 +79,7 @@
   display: inline-flex;
   width: 1.5rem;
   height: 1.5rem;
-  background: white;
+  background: #eeeeee;
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -89,9 +89,10 @@
 }
 .slider > a:active {
   top: 1px;
+  background: #0954dd;
 }
 .slider > a:focus {
-  background: #eeeeee;
+  background: #0bbd78;
 }
 
 /* Don't need button navigation */
