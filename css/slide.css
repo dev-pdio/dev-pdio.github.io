@@ -1,5 +1,5 @@
 .slider {
-  width: 300px;
+  width: 600px;
   text-align: center;
   overflow: hidden;
 }
@@ -25,7 +25,7 @@
   height: 10px;
 }
 .slides::-webkit-scrollbar-thumb {
-  background: black;
+  background: #0954dd;
   border-radius: 10px;
 }
 .slides::-webkit-scrollbar-track {
@@ -92,7 +92,7 @@
   background: #0954dd;
 }
 .slider > a:focus {
-  background: #0bbd78;
+  background: ##0954dd;
 }
 
 /* Don't need button navigation */
