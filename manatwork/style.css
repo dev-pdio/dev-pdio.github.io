@@ -8,7 +8,7 @@ body{
 }
 h1{
     font-size: 2.5rem;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Gothan Rounded Medium', cursive;
 }
 div{
     transform-style: preserve-3d;
@@ -16,12 +16,11 @@ div{
 svg{
     width: clamp(300px , 70% , 600px);
     height: 500px;
-  
+
 }
 #rocket{
     
     transform: translateY(750px);
-   
     animation: launch 2s ease-out forwards;
 }
 
